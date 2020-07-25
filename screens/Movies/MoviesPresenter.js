@@ -2,11 +2,12 @@
 import React from 'react';
 import styled from 'styled-components/native'; //mobile에서는 native 를 붙여야 더 최적화된 것.
 import Swiper from "react-native-web-swiper";
-import {ActivityIndicator, ScrollView, View, Dimensions} from 'react-native';
+import {ActivityIndicator, ScrollView, Dimensions} from 'react-native';
 import Slide from '../../components/Movies/Slide';
 import Slide_popular from '../../components/Movies/Slide_popular';
 import Upcoming from "../../components/Movies/Upcoming";
 import Title from '../../components/Title';
+import moment from 'moment';
 
 const {width: WIDTH, height: HEIGHT} = Dimensions.get('screen');
 
@@ -52,6 +53,7 @@ const MoviesPresenter = ({loading, nowPlaying, popular, upcoming}) => {
                                     poster={movie.poster_path}
                                 />
                             ))}
+
                         </Swiper>
                     </SlideContainer>
 

@@ -1,11 +1,5 @@
 //rsc
 import React from 'react';
-import {View, Text} from 'react-native';
+import SearchPresenter from "./SearchPresenter";
 
-const Search = () => (
-    <View>
-        <Text>Search</Text>
-    </View>
-);
-
-export default Search;
+export default () => <SearchPresenter />;
