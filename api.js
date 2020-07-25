@@ -27,7 +27,8 @@ export const movieAPI = {
     nowPlaying: () => getAnything('/movie/now_playing'),
     popular: () => getAnything("/movie/popular"),
     upcoming: () => getAnything('/movie/upcoming', {region: 'us'}),
-    search: query => getAnything('/search/movie', {query}),
+    search: query => getAnything('/search/movie', { query }),
+    search2: query => `https://api.themoviedb.org/3/search/movie?api_key=2cde3163ac2ee24dc1931bddddf43dfe&language=en-US&query=${query}`,
     movie: id => getAnything('/movie/${id}')
 }
 
