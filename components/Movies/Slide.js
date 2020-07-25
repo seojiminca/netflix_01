@@ -88,7 +88,6 @@ const Slide = ({
                     </Data>
                 </Content>
             </Container>
-
     );
 };
 

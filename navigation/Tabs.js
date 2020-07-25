@@ -55,9 +55,9 @@ export default ({navigation, route}) => {
                 inactiveTintColor: 'grey'
             }}
         >
+            <Tabs.Screen name={"Search"} component={Search}/>
             <Tabs.Screen name={"Movie"} component={Movie}/>
             <Tabs.Screen name={"TV"} component={Tv}/>
-            <Tabs.Screen name={"Search"} component={Search}/>
             <Tabs.Screen name={"Favorite"} component={Favorite}/>
         </Tabs.Navigator>
     );
