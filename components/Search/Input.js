@@ -14,7 +14,7 @@ const Input = ({placeholder, value, onChange, onSubmit}) => (
         onChangeText={onChange}
         placeholder={placeholder}
         onSubmit={onSubmit}
-        returnKeyType={"Search"}
+        returnKeyType={"search"} //키보드에 나오는 단어.
     />
 );
 
